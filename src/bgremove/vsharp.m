@@ -135,7 +135,7 @@ function [fl, mask] = vsharp(f, mask, vsz, rs, thr)
     end
 
     % deconvolution + high-pass filter
-    f = maskn .* real(ifft3(ih .* fft3(f)));
+    %f = maskn .* real(ifft3(h .* fft3(f)));
 
     % unpad and uncrop
     if ndims(f) > 3
